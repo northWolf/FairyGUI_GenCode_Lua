@@ -31,7 +31,7 @@ local customPropKeys = {
 	require("UIGenCode.init");
 	UI_DemoComponent:CreateInstance();
     GRoot.inst:AddChild(UI_DemoComponent.__ui);
-	 UI_DemoComponent.m_btn_login.onClick:Add(function()
+	UI_DemoComponent.m_btn_login.onClick:Add(function()
         print("btn clicked");
     end);
 ```

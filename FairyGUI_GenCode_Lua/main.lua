@@ -171,7 +171,7 @@ function genCode(handler)
             _classTemplateTxt = string.gsub(_classTemplateTxt, "$namespace", "");
         end
 
-        local _classFieldAnnotation = string.format('\n---@field public %s %s', "__ui", classInfo.superClassName);
+        local _classFieldAnnotation = string.format('---@field public %s %s\n', "__ui", classInfo.superClassName);
         local memberCnt = members.Count
         for j = 0, memberCnt - 1 do
             if (j > 0) then
