@@ -2,7 +2,7 @@ $requireStatement
 
 local $binderClassName = class("$binderClassName");
 
-function $binderClassName.BindAll()
+function $binderClassName:BindAll()
 $bindStatement
 end
 
